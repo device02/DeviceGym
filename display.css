@@ -1,0 +1,880 @@
+*{
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: calibri;
+  margin: 0px;
+}
+
+/* ========== HEADER ENHANCEMENTS ========== */
+header {
+  display: flex;
+  background-color: black;
+  color:white;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  max-height: 150px;
+  gap: 40px;
+  align-items: center;
+  padding-top: 10px;
+
+  /* Transition & animation */
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideDown 1s ease-out forwards;
+}
+
+/* Animate header image too */
+header img {
+  max-height: 100px;
+  transition: transform 0.3s ease;
+}
+header img:hover {
+  transform: scale(1.2);
+}
+
+/* ========== BUTTONS WITH SMOOTH TRANSITIONS ========== */
+.headerbutton,
+.loginbutton,
+.signupbutton {
+  transition: all 0.3s ease;
+}
+
+/* Add hover effect to .headerbutton */
+.headerbutton {
+  padding: 7px 24px;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border:none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.headerbutton:hover {
+  background-color: white;
+  color: rgb(139, 55, 217);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Login & Signup Buttons */
+.loginbutton {
+  padding: 20px 40px;
+  color: red;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 100px;
+  font-size: larger;
+  text-decoration: none;
+}
+.signupbutton {
+  padding: 7px 20px;
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.loginbutton:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1.15);
+}
+.signupbutton:hover {
+  background-color: darkred;
+}
+
+/* ========== SECTION1 TRANSITIONS ========== */
+.section1 {
+  padding: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+
+  gap: 50px;
+  align-items: center;
+  background-image: url('assets/darkbackgrund.jpg');
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInText 1s ease-out forwards;
+  animation-delay: 1.8s;
+  
+}
+
+/* Section1 Image transition */
+.section1 img {
+  max-height: 120px;
+  max-width: 120px;
+  border-radius: 50px;
+  transition: transform 0.4s ease;
+}
+.section1 img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* ========== SECTION1s TRANSITIONS ========== */
+.section1s {
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(234, 231, 231);
+  background-image: url('assets/darkbackgrund.jpg');
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInText 1s ease-out forwards;
+  animation-delay: 1s;
+}
+.stays{
+  margin-top: 10px;
+   display: flex;
+  text-align: center;
+  justify-content: center; 
+}
+
+.section1s img {
+  max-width: 800px;
+  height: 500px;
+  border-radius: 20px;
+  min-width: 200px;
+  margin-bottom: 7px;
+
+  transition: transform 0.4s ease;
+}
+.section1s img:hover {
+  transform: scale(1.03);
+}
+
+/* ========== TOPLINKS HOVER ANIMATION ========== */
+.toplinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  
+  background-color: white;
+  padding: 60px 60px 20px 60px;
+  border-radius: 0 20px;
+  
+}
+.toplinks a{
+  text-decoration: none;
+  color: rgb(9, 9, 9);
+}
+.toplinks a,
+.toplinks div,
+.toplinks span {
+  transition: color 0.3s ease, transform 0.3s ease;
+ 
+}
+.toplinks :hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+/* ========== LOGINSIGNUP SECTION ========== */
+.loginsignup {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(70, 66, 73);
+  margin-left: 100px;
+  text-decoration: none;
+
+
+}
+
+/* ========== KEYFRAME ANIMATIONS ========== */
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  padding: 80px 20px 80px;
+  margin-top: 20px;
+ opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInSection 1s ease-out forwards;
+  animation-delay: 0.9s; /* optional delay */
+}
+
+@keyframes fadeInSection {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.section2 img{
+  max-width: 500px;
+  border-radius: 5px;
+
+}
+
+.explore{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+
+}
+.section3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  gap: 100px;
+   line-height: 1.5;
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5)
+     
+}
+
+.advert2{
+  padding-top: 50px;
+  width: 500px;
+   
+}
+.advert1{
+  padding-top: 73px;
+  width: 500px;
+   
+}
+.getstarted{
+  
+  font-size: 70px;
+  
+}
+.joinnow{
+  padding: 20px 40px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  border-radius: 100px;
+  font-size: larger;
+  margin-top: 20px;
+  
+}
+.joinnow:hover {
+  
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1.15);
+}
+.section4{
+ background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      animation: slideShow 30s infinite;
+    }
+    @keyframes slideShow {
+  0%    { background-image: url('assets/dembells.jpg'); }
+  33%   { background-image: url('assets/darkbackground2.jpg'); }
+  66%   { background-image: url('assets/push.jpg'); }
+  100%  { background-image: url('assets/gymbg.jpg'); }
+}
+
+    .contact-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 10%;
+      /*backdrop-filter: blur(5px);*/
+    }
+
+    .contact-info {
+      flex: 1;
+      padding-right: 40px;
+    }
+
+    .contact-info h3 {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .contact-info h1 {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      color: #00bfff;
+    }
+
+    .contact-info .info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .contact-info .info-item i {
+      color: #00bfff;
+      margin-right: 15px;
+      font-size: 20px;
+      margin-top: 5px;
+    }
+
+    .contact-info a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 22px;
+      color: #00bfff;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #fff;
+    }
+
+    .contact-form {
+      flex: 1;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      background: #afcdd7;
+      border: none;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      color: black;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background: red;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #009ad6;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        padding: 40px 20px;
+        .locations img{
+          min-width: 70px;
+
+        }
+      }
+
+      .contact-info {
+        margin-bottom: 40px;
+        padding-right: 0;
+      }
+    }
+    .aboutbackground{
+      padding-top: 60px;
+      padding-bottom: 40px;
+  background-size: cover;
+  background-color: black;
+    }
+.aboutsection {
+ 
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px white;
+        opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideDown 1s ease-out forwards;
+  
+      
+
+    }
+
+    .aboutsection h1 {
+      font-size: 40px;
+      text-align: center;
+      color: #e63946; /* Gym highlight color */
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+
+    .aboutsection p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .aboutsection ul {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+
+    .aboutsection ul li {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .aboutsection strong {
+      color: #1d3557;
+    }
+.partners{
+   padding: 40px 0 40px 0;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+    background-image: url('assets/darkbackgrund.jpg');
+
+}
+
+.partners img{
+  height: 300px;
+  width: 250px;
+  border-radius: 5px;
+  
+}
+
+.partner1{
+   margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px white;
+
+}
+.partner2{
+   margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px white;
+}
+.partner3{
+   margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px white;
+}
+.partner4{
+   margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px white;
+}
+.locations{
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-weight: bold;
+  
+}
+.locations img{
+  height: 500px;
+  width: 800px;
+  border-radius: 5px;
+  padding: 20px 0 20px 0;
+}
+.locations h1{
+  text-decoration: underline;
+  color: red;
+}
+.location1,
+.location2,
+.location3 {
+  min-height: 190px;
+  width: 600px;
+}
+.location1{
+  padding-top: 10px;
+}
+.section1s p{
+  color:white;
+  background-color: red;
+  padding: 0 20px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: bold;
+
+ }
+.classes{
+ padding: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 20px; /* space between images */
+  justify-items: center; /* center images in each cell */
+  margin: 0px auto; /* center classes block on page */
+  max-width: 1200px; /* optional: keep claasses neat */
+  color: white;
+  
+  
+
+}
+.classsection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  background-image:url(assets/darkbackground2.jpg);
+  background-size: cover;
+  
+}
+.blank{
+  background-color: black;
+}
+.class1,.class2,.class3,
+.class4,.class5,.class6,
+.class7,.class8,.class9{
+  
+  border: #e63946 solid 3px;
+/*  padding: 200px 40px 20px 20px;*/
+  min-width: 300px;
+  
+ 
+
+}
+.class1 h2,.class2 h2,.class3 h2,
+.class4 h2,.class5 h2,.class6 h2,
+.class7 h2,.class8 h2,.class9 h2{
+  text-decoration: underline;
+  color: red;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.class1 p,.class2 p,.class3 p,
+.class4 p,.class5 p,.class6 p,
+.class7 p,.class8 p,.class9 p{
+  color: white;
+  margin-top: 5px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  background-color: red;
+}
+.class1{
+  background-image: url(assets/gallery3.jpg);
+  background-size: cover;
+  
+}
+.class2{
+  background-image: url(assets/boxingclass.jpg);
+  background-size: cover;
+}
+.class3{
+  background-image: url(assets/dance.jpg);
+  background-size: cover;
+}
+.class4{
+  background-image: url(assets/taebo.jpg);
+  background-size: cover;
+}
+.class5{
+  background-image: url(assets/insanity.png);
+  background-size: cover;
+}
+.class6{
+  background-image: url(assets/step.png);
+  background-size: cover;
+}
+.class7{
+  background-image: url(assets/abdominal.png);
+  background-size: cover;
+}
+.class8{
+  background-image: url(assets/yoga.png);
+  background-size:cover;
+}
+.class9{
+  background-image: url(assets/circuit.jpg);
+  background-size:cover;
+  }
+.classnote{
+  background-color: rgba(0, 0, 0, 0.6);
+  
+  padding: 40px 40px 20px 40px;
+  max-width: 600px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+ 
+}
+/*.gallery{
+  
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center; 
+   flex-wrap: wrap; 
+     gap: 20px;
+
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(234, 231, 231);
+  background-image: url('assets/darkbackgrund.jpg');
+  background-size: cover;
+
+}
+.gallery img{
+  width: 400px;
+  height: 400px;
+  
+  /* Animation */
+    
+/*  transform: translateY(30px);
+  animation: fadeInText 1s ease-out forwards;
+  animation-delay: 1s;
+  transition: all 0.9s ease;
+
+}
+.gallery img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}*/
+.gallerysection{
+   background-image: url('assets/darkbackgrund.jpg');
+  background-size: cover;
+  flex-wrap: wrap;
+}
+.gallery {
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 30px; /* space between images */
+  justify-items: center; /* center images in each cell */
+  margin: 0px auto; /* center gallery block on page */
+  max-width: 1200px; /* optional: keep gallery neat */
+
+}
+
+.gallery img {
+  min-width: 100%; 
+  min-height: 100%;        /* make it fill its grid cell */
+  width: 250px;    /* limit image size */
+  height: 350px;        /* keep aspect ratio */
+  border-radius: 10px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);  /* pop effect */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+.addandwearsadd{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  margin: 80px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  line-height: 1.5;
+ 
+
+}
+.addandwearsadd img{
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+ margin-bottom: 20px;
+  }
+  .addandwearsadd video{
+  height: 600px;
+  width: 800px;
+  border-radius: 5px;
+  }
+.addandwearsadd p{
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 20px;
+  text-shadow: none;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer{
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+.scroll-btn {
+  position: fixed;
+  right: 20px;           /* distance from right edge */
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color:#00bfff;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px white;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  /*background-color:#97a9ae;*/
+  transform: scale(1.2);
+}
+
+/* Positioning */
+.top-btn {
+  bottom: 20px; /* above bottom button */
+}
+
+.bottom-btn {
+  top: 20px; /* near bottom */
+}
+
+
+
+
+
+
+
+/* ========================
+   RESPONSIVE ONLY
+   (Keep your original CSS above this)
+======================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  /* Make big sections stack vertically */
+  .section1s {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* Gallery: 2 images per row */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Addandwears section: stack */
+  .addandwearsadd {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  /* Navbar stack */
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .toplinks {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .loginsignup {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  /* Gallery: 1 image per row */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact form padding */
+  .contact-section {
+    padding: 20px;
+  }
+
+  /* Make all images scale down */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  video{
+    max-width: 100%;
+    height: auto;
+  }
+}
