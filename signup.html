@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+   <link rel="icon"  href="assets/devicegymlogo.png"/>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="display.css" >
+</head>
+<body>
+    <header>
+        <img src="assets/devicegymlogo.png">
+        <p> SHOP FOR GYM WEARS <br> LIMITED OFFER</p>
+        <button class="headerbutton">SHOP NOW !</button>
+    </header>
+    <section class="section1">
+        <div>
+        <img src = "assets/group pic.png">
+        </div>
+        <div class="toplinks">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="classes.html">Classes</a>
+       <!-- <a>Pricing</a>-->
+        <a href="index.html#contact">Contact Us</a>
+        <a href="signup.html">Become a Member</a>
+        </div>
+        </section>
+    <div class= "signupbody">
+      <div class="signupcontainer">
+        <h1>Register New User</h1>
+  <form class="signupform" id="signupform">
+    <label for="profile_photo">Upload Profile Photo:</label>
+    <input type="file" id="profile_photo" name="profile_photo" accept="image/*" />
+    <input type="text" name="fullname" placeholder="Full Name" required />
+    <input type="text" name="username" placeholder="Username" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+    <input type="number" name="phone" placeholder="Phone Number" required />
+    
+    <select name="gender" required>
+      <option value="" disabled selected>Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <input type="date" name="dob" placeholder="Date Of Birth" />
+    <input type="text" name="address" placeholder="Address" required />
+
+    <button onclick="window.open('aftersignup.html')" class="signupbtn" type="submit">Create Account</button>
+    <p>Already have an account? <a href="signin.html">Log In</a></p>
+  </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+           <div class="footer">
+        <p>© 2024 DeviceGym. All rights reserved. | Privacy Policy | Terms of Service | Cookie Policy</p>   
+    </div>
+    <script src="devicegym.js"></script>
+</body>
