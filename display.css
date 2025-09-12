@@ -775,12 +775,12 @@ header img:hover {
 }
 .signincontainer input
   {
-      background: #b5c0c4;
+      background: #e3c9bc;
       border: none;
       padding: 10px 15px;
       border-radius: 20px;
       color: black;
-      font-size: 14px;
+      font-size: 16px;
       width: 300px;
     }
    .signinsection{
@@ -815,7 +815,7 @@ header img:hover {
    justify-content: center;  
   
   max-width: 500px;
-  margin: 50px auto;
+    margin: 50px auto;
   padding: 30px;
   background: #fff; 
   border-radius: 10px;
@@ -879,6 +879,20 @@ header img:hover {
   font-size: 15px;
   text-align: left;
   margin-top: 40px;
+}
+.alreadyhaveanaccount{
+  
+  font-size: 18px;
+}
+.alreadyhaveanaccount a:hover{
+color: darkred;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.alreadyhaveanaccount a{
+  text-decoration: none;
+  color:red
 }
 
 
