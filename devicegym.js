@@ -19,7 +19,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
 
 
-
 // Scroll to Top Function
 // Scroll to top
 function scrollToTop() {
@@ -37,3 +36,11 @@ function scrollToBottom() {
   });
 }
 
+
+
+const login = document.getElementById("signinbtn");
+login.addEventListener("click", gotopage);
+
+function gotopage () {
+  console.log("logged in mudafuka");
+}
