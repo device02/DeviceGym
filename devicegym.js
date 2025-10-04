@@ -39,7 +39,7 @@ function scrollToBottom() {
 
 
 const login = document.getElementById("signinbtn");
-login.addEventListener("click", gotopage);
+login.addEventListener("click", gotopage)
 
 function gotopage () {
   console.log("logged in mudafuka");
